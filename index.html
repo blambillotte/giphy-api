@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
+  <title>Gif Button Search</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to Gif Button Search!</h1>
+      <div class="row margin-top">
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Use the input below to add Gif buttons</h3>
+            </div>
+            <div class="panel-body">
+              <form id="button-form">
+                <div class="input-group">
+                  <input id="btn-input" type="text" class="form-control" placeholder="Add an Option">
+                  <span class="input-group-btn">
+                    <button id="add-btn" class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-plus-sign"></span></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div> <!-- End Panel -->
+        </div> <!-- End Col -->
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Buttons (Clicky!!)</h3>
+            </div>
+            <div class="panel-body">
+              <div id="buttons"></div>
+            </div>
+          </div> <!-- End Panel -->
+        </div> <!-- End Col -->
+
+      </div> <!-- End Row -->
+
+
+    </div>
+  </div> <!-- End Jumbotron -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Gifs</h3>
+          </div>
+          <div class="panel-body">
+            <div id="no-connection" class="invisible alert alert-danger alert-dismissible" role="alert">
+              <button id="close-error" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>On No!</strong> It looks like we're having trouble accessing the Giphy API.
+            </div>
+            <div id="null-state" class="">
+              <h3>Click the buttons above to load some Gifs!</h3>
+              <p>Once loaded, cick on the images to bring them to life.</p>
+              <div class="null-images">
+                <img class="placeholder fade-in one" src="./Assets/Images/gif-file.svg" alt="">
+                <img class="placeholder fade-in two" src="./Assets/Images/gif-file.svg" alt="">
+                <img class="placeholder fade-in three" src="./Assets/Images/gif-file.svg" alt="">
+                <img class="placeholder fade-in four" src="./Assets/Images/gif-file.svg" alt="">
+              </div>
+            </div>
+            <div id="gifs-appear-here"></div>
+          </div>
+        </div>
+      </div> <!-- End Col -->
+    </div> <!-- End Row -->
+
+
+  </div> <!-- End Container -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./Assets/JS/config.js" charset="utf-8"></script>
+<script src="./Assets/JS/main.js" charset="utf-8"></script>
+</body>
+</html>

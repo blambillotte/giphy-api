@@ -1,0 +1,134 @@
+/* ==========================================================================
+    Section comment block
+   ========================================================================== */
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px #4CAF50;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  text-align: center;
+}
+
+
+/* Main Containers
+   ========================================================================== */
+
+img {
+  transition: all 1s ease-in-out;
+  border-radius: 5px;
+}
+
+.container {
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.gif {
+  cursor: pointer;
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+
+.gif-div > p {
+  color: black;
+}
+
+.inactive {
+  filter: grayscale(1);
+  transform: scale(.9);
+}
+
+.gif-div {
+  display: inline-block;
+  margin: 5px 14px;
+  flex-grow: 1;
+}
+
+#gifs-appear-here {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.panel {
+  margin-top: 20px;
+}
+
+.panel {
+  color: #f5f5f5;
+}
+
+input[type=button] {
+  padding: 5px 12px;
+  margin: 4px 8px;
+  border: 1px solid #1d486d;
+  border-radius: 6px;
+}
+
+/*input[type=button]:hover {
+  background-color: #337ab7;
+}*/
+
+.btn-success:focus {
+  background-color: #FF9800;
+  outline: 0;
+  border: none;
+  transform: scale(1.2);
+}
+
+
+/* Display Toggling
+   ========================================================================== */
+
+.invisible {
+  display: none;
+}
+
+
+/* Null State
+   ========================================================================== */
+
+.null-images {
+  display: flex;
+  margin-top: 20px;
+}
+
+.placeholder {
+  flex-grow: 1;
+}
+
+
+/* Animations
+   ========================================================================== */
+
+
+@keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+.fade-in {
+ opacity: 0;  /* make things invisible upon start */
+ animation: fadeIn ease-in 1;
+ animation-fill-mode: forwards;
+ animation-duration: 1s;
+}
+
+.fade-in.one { animation-delay: 0.5s; }
+.fade-in.two { animation-delay: .9s; }
+.fade-in.three { animation-delay: 1.3s; }
+.fade-in.four { animation-delay: 1.8s; }
