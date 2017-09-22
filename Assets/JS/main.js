@@ -14,6 +14,8 @@ $(document).ready(function() {
   var $nullStateDiv = $('#null-state');
   var $APIKeyInput = $('#API_KEY');
   var $APIKeySaveBtn = $('#API_Add_Btn');
+  var $actionBarDiv = $('#action-bar');
+  var $apiKeyInputDiv = $('#API-Key-Input');
 
   /*
   ************ Main App Functions *******************
@@ -198,6 +200,9 @@ $(document).ready(function() {
       console.log('Key is Valid');
       //Set global API Key Variable
       API_KEY = testKey;
+      $apiKeyInputDiv.addClass('fade');
+      $apiKeyInputDiv.addClass('invisible');
+      $actionBarDiv.removeClass('invisible');
     }).fail(function(err) {
       $noConnectWarn.removeClass('invisible');
       throw err;

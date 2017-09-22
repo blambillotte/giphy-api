@@ -11,7 +11,29 @@
   <div class="jumbotron">
     <div class="container">
       <h1>Welcome to Gif Button Search!</h1>
-      <div class="row margin-top">
+
+      <div class="row margin-top" id="API-Key-Input">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Add Your API Key Here</h3>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="input-group">
+                  <input id="API_KEY" type="text" class="form-control" placeholder="Paste API Key">
+                  <span class="input-group-btn">
+                    <button id="API_Add_Btn" class="btn btn-primary" type="submit">Save API Key</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div> <!-- End Panel -->
+        </div> <!-- End Col -->
+      </div> <!-- End Row -->
+
+      <div class="row margin-top invisible" id="action-bar">
 
         <div class="col-md-6">
           <div class="panel panel-default">
@@ -49,22 +71,6 @@
   </div> <!-- End Jumbotron -->
 
   <div class="container">
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Add Your API Key Here</h3>
-      </div>
-      <div class="panel-body">
-        <form>
-          <div class="input-group">
-            <input id="API_KEY" type="text" class="form-control" placeholder="Paste API Key">
-            <span class="input-group-btn">
-              <button id="API_Add_Btn" class="btn btn-primary" type="submit">Save API Key</button>
-            </span>
-          </div>
-        </form>
-      </div>
-    </div> <!-- End Panel -->
 
     <div class="row">
       <div class="col-md-12">

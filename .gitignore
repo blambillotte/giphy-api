@@ -3,6 +3,8 @@
 # Other files and folders
 .DS_Store
 
+config.js
+
 # Executables
 *.swf
 *.air
